@@ -3,15 +3,10 @@
   "site_title": "Hi, My name is FelipeSazz!",
   "site_description": "13 y.o, programmer from Bahia, Brazil",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "sazz",
+    "felipesazz",
+    "js",
+    "nextjs"
   ],
   "posts_per_page": 5,
   "twitter_account": "@FelipeSazz",
