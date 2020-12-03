@@ -22,7 +22,6 @@
             "div",
             { className: "content" },
             h("h1", {}, entry.getIn(["data", "title"])),
-            h("img", {}, this.props.widgetFor("cover_image")),
             h("time", {}, entry.getIn(["data", "date"])),
             h("div", {}, this.props.widgetFor("body"))
           );
