@@ -114,10 +114,6 @@ collections:
         format: "YYYY-MM-DD"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
-      - label: "Cover Image"
-        name: "cover_image"
-        widget: "image"
-        required: false
       - label: Author
         name: "author"
         widget: relation
