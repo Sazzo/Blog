@@ -18,13 +18,13 @@ export default function Burger({ active, onClick }: Props) {
             top: 1rem;
             left: 1.25rem;
             z-index: 2;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: transparent;
           }
           .meat {
             position: absolute;
             width: 28px;
             height: 2px;
-            background: #222;
+            background: #ffffff;
             top: calc(50% - 2px / 2);
             left: calc(50% - 28px / 2);
             transition: all 150ms ease-in;

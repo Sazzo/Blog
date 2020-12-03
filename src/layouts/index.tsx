@@ -157,7 +157,7 @@ export default function Index({
             .token.constant,
             .token.symbol,
             .token.deleted {
-              color: #22863a;
+              color: #3b84bf;
             }
 
             .token.selector,
@@ -166,7 +166,7 @@ export default function Index({
             .token.char,
             .token.builtin,
             .token.inserted {
-              color: #032f62;
+              color: #4b8ec4;
             }
 
             .token.function,
@@ -181,11 +181,11 @@ export default function Index({
             .language-jsx .token.tag .token.punctuation,
             .language-jsx .token.tag .token.script,
             .language-jsx .token.plain-text {
-              color: #24292e;
+              color: #4b8ec4;
             }
 
             .language-jsx .token.tag .token.attr-name {
-              color: #6f42c1;
+              color: #4b8ec4;
             }
 
             .language-jsx .token.tag .token.class-name {
@@ -207,11 +207,11 @@ export default function Index({
 
             /* HTML */
             .language-html .token.tag .token.punctuation {
-              color: #24292e;
+              color: #4b8ec4;
             }
 
             .language-html .token.tag .token.attr-name {
-              color: #6f42c1;
+              color: #4b8ec4;
             }
 
             .language-html .token.tag .token.attr-value,
@@ -219,7 +219,7 @@ export default function Index({
               .token.tag
               .token.attr-value
               .token.punctuation:not(:first-child) {
-              color: #032f62;
+              color: #ffffff;
             }
 
             /* CSS */

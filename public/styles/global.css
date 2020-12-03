@@ -4,8 +4,8 @@
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: #23272a;
+  color: #ffffff;
   font-weight: 200;
   height: 100%;
 }
@@ -15,14 +15,14 @@ body {
 }
 
 a {
-  color: #9b9b9b;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:active,
 a:hover {
-  color: #000;
+  color: #d6d1d1;
 }
 
 .youtube-container {

@@ -1,6 +1,6 @@
 .content {
   font-family: "Ubuntu", sans-serif;
-  color: #222;
+  color: #f5f5f5;
   font-weight: 200;
 }
 
@@ -42,7 +42,7 @@
 
 .content pre {
   display: block;
-  background-color: rgba(27, 31, 35, 0.05);
+  background-color: #2b3036;
   line-height: 1.25rem;
   padding: 1rem;
   overflow: auto;
@@ -92,6 +92,7 @@
 
 .content table th {
   font-weight: 500;
+  color: #23272a;
 }
 
 .content table th,

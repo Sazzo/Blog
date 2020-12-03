@@ -1,7 +1,7 @@
 export default function Copyright() {
   return (
     <>
-      <p>&copy; 2020</p>
+      <p>Felipe Garcia &copy; 2020 | Built with Next.js and Love ❤</p>
       <style jsx>
         {`
           p {
