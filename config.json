@@ -3,13 +3,17 @@
   "site_title": "Hi, My name is FelipeSazz!",
   "site_description": "13 y.o, programmer from Bahia, Brazil",
   "site_keywords": [
-    "sazz",
-    "felipesazz",
-    "js",
-    "nextjs"
+    {
+      "keyword": "sazz"
+    },
+    {
+      "keyword": "felipesazz"
+    },
+    {
+      "keyword": "js"
+    }
   ],
   "posts_per_page": 5,
   "twitter_account": "@FelipeSazz",
-  "github_account": "Sazzo",
-  "site_image": ""
+  "github_account": "Sazzo"
 }

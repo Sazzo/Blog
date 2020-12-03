@@ -13,7 +13,6 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          <img src={config.site_image}></img>
           <h1>{config.site_title}</h1>
           <h2>{config.site_description}</h2>
           <SocialList />
