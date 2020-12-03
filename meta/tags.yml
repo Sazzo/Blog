@@ -1,13 +1,7 @@
 tags:
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
-  - slug: style
-    name: style
-  - slug: license
-    name: license
-  - slug: mdx
-    name: mdx
-  - slug: markdown
-    name: markdown
+  - slug: anime
+    name: anime
+  - slug: project
+    name: project
+  - slug: javascript
+    name: javascript
