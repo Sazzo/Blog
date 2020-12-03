@@ -30,6 +30,7 @@ collections:
           - label: "Image"
             name: "site_image"
             widget: "image"
+            required: false
           - label: "Site keywords"
             name: "site_keywords"
             widget: "list"
