@@ -8,7 +8,7 @@ const postsDirectory = path.join(process.cwd(), "src/pages/posts");
 export type PostContent = {
   readonly date: string;
   readonly title: string;
-  readonly image?: string;
+  readonly cover_image?: string;
   readonly slug: string;
   readonly tags?: string[];
 };
