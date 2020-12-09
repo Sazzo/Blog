@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../public/styles/content.module.css";
 import Author from "../components/Author";
 import Copyright from "../components/Copyright";
+import WaterMark from "../assets/felipesazz.svg";
 import Date from "../components/Date";
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
@@ -19,7 +20,7 @@ type Props = {
   date: Date;
   slug: string;
   description: string;
-  tags: string[];
+  tags?: string[];
   author: string;
 };
 export default function Index({
@@ -30,7 +31,10 @@ export default function Index({
   tags,
   description,
 }: Props) {
-  const keywords = tags.map((it) => getTag(it).name);
+  let keywords;
+  if (tags) {
+    keywords = tags.map((it) => getTag(it).name);
+  }
   const authorName = getAuthor(author).name;
   return ({ children: content }) => {
     return (
@@ -38,7 +42,7 @@ export default function Index({
         <BasicMeta
           url={`/posts/${slug}`}
           title={title}
-          keywords={keywords}
+          keywords={keywords ? keywords : ""}
           description={description}
         />
         <TwitterCardMeta
@@ -54,7 +58,7 @@ export default function Index({
         <JsonLdMeta
           url={`/posts/${slug}`}
           title={title}
-          keywords={keywords}
+          keywords={keywords ? keywords : "sazz"}
           date={date}
           author={authorName}
           description={description}
@@ -74,18 +78,20 @@ export default function Index({
             </header>
             <div className={styles.content}>{content}</div>
             <ul className={"tag-list"}>
-              {tags.map((it, i) => (
-                <li key={i}>
-                  <TagButton tag={getTag(it)} />
-                </li>
-              ))}
+              {tags
+                ? tags.map((it, i) => (
+                    <li key={i}>
+                      <TagButton tag={getTag(it)} />
+                    </li>
+                  ))
+                : null}
             </ul>
           </article>
           <footer>
             <div className={"social-list"}>
               <SocialList />
+              <Copyright />
             </div>
-            <Copyright />
           </footer>
         </div>
         <style jsx>

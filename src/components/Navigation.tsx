@@ -13,18 +13,17 @@ export default function Navigation() {
         <ul>
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" ? "active" : null}>home</a>
+              <a>{router.pathname === "/" ? "> " : ""} home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>{router.pathname.startsWith("/about") ? "> " : ""} about</a>
             </Link>
           </li>
           <li>
             <Link href="/posts">
-              <a
-                className={
-                  router.pathname.startsWith("/posts") ? "active" : null
-                }
-              >
-                blog
-              </a>
+              <a>{router.pathname.startsWith("/posts") ? "> " : ""} blog</a>
             </Link>
           </li>
         </ul>
@@ -51,10 +50,6 @@ export default function Navigation() {
               transform: translateY(100%);
               transition: opacity 200ms;
             }
-            .active ul {
-              opacity: 1;
-              transform: translateY(0);
-            }
             li {
               margin-bottom: 1.75rem;
               font-size: 2rem;
@@ -62,9 +57,6 @@ export default function Navigation() {
             }
             li:last-child {
               margin-bottom: 0;
-            }
-            .active {
-              color: #ffffff;
             }
 
             @media (min-width: 769px) {
@@ -81,7 +73,7 @@ export default function Navigation() {
               }
               li {
                 font-size: 1rem;
-                padding: 0;
+                padding: 0 1.5rem 0 0;
               }
             }
           `}

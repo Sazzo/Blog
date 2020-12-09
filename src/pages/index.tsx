@@ -14,7 +14,7 @@ export default function Index() {
       <div className="container">
         <div>
           <h1>{config.site_title}</h1>
-          <h2>{config.site_description}</h2>
+          <h3>{config.site_description}</h3>
           <SocialList />
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Index() {
           margin: 0;
           font-weight: 500;
         }
-        h2 {
+        h3 {
           font-size: 1.75rem;
           font-weight: 400;
           line-height: 1.25;
@@ -50,8 +50,8 @@ export default function Index() {
           h1 {
             font-size: 3rem;
           }
-          h2 {
-            font-size: 2.25rem;
+          h3 {
+            font-size: 1.75rem;
           }
         }
       `}</style>
